@@ -1,11 +1,11 @@
 apiVersion: spaces.tanzu.vmware.com/v1alpha1
 kind: Space
 metadata:
-  name: mbentley-space
+  name: mbentley-space2
   namespace: default
 spec:
   availabilityTargets:
-    - name: mbentley-at1
+    - name: mbentley-at2
       replicas: 1
   revisionHistoryLimit: 10
   template:

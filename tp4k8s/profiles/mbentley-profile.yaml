@@ -8,8 +8,9 @@ spec:
   requiredCapabilities:
     - name: certificates.tanzu.vmware.com
     - name: container-app.tanzu.vmware.com
-    - name: package-management.tanzu.vmware.com
     - name: k8sgateway.tanzu.vmware.com
+    - name: package-management.tanzu.vmware.com
+    - name: ingress.tanzu.vmware.com
   traits:
     - alias: carvel-package-installer.tanzu.vmware.com
       name: carvel-package-installer.tanzu.vmware.com

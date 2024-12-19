@@ -1,0 +1,21 @@
+apiVersion: spaces.tanzu.vmware.com/v1alpha1
+kind: AvailabilityTarget
+metadata:
+  name: mbentley-at2
+  namespace: default
+spec:
+  affinity:
+    clusterAffinity:
+      clusterSelectorTerms:
+        - matchExpressions:
+            - key: tmc.cloud.vmware.com/creator
+              operator: In
+              values:
+                - mbentley
+            - key: mbentley-env
+              operator: In
+              values:
+                - at2
+    clusterAntiAffinity:
+      clusterSelectorTerms: []
+  description: mbentley-at2
